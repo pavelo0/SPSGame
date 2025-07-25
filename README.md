@@ -1,7 +1,1 @@
-# SPSGame
-# SPSGame
-# SPSGame
-# SPSGame
-# SPSGame
-# SPSGame
-# SPSGame
+# This is StoneScissorsPaper Game. The 1st project of my new try in learning
