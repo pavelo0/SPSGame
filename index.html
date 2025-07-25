@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="reset.css" />
+		<title>PaperScissorsStone Game</title>
+		<script src="app.js" defer></script>
+	</head>
+	<body>
+		<header class="header">
+			<h1 class="header-title">PSS Game</h1>
+			<h2 class="header-author">Pavelo_0</h2>
+		</header>
+		<main class="game">
+			<div class="result">
+				<div id="opponent-card" class="result-choice">
+					<h2 id="opponent-value" class="result-choice__title">PC choice</h2>
+				</div>
+
+				<h3 class="vs-title">VS</h3>
+
+				<div id="user-card" class="result-choice">
+					<h2 id="user-value" class="result-choice__title">Your choice</h2>
+				</div>
+			</div>
+			<h3 class="game-result">Status will be shown here!</h3>
+			<div class="buttons-to-play">
+				<div class="buttons-to-play__choice">
+					<button data-value="scissors" class="buttons-to-play__choice__button">
+						Scissors
+					</button>
+					<button data-value="stone" class="buttons-to-play__choice__button">
+						Stone
+					</button>
+					<button data-value="paper" class="buttons-to-play__choice__button">
+						Paper
+					</button>
+				</div>
+				<button class="confirm-button">Confirm</button>
+				<button class="retry-button">Retry</button>
+			</div>
+		</main>
+	</body>
+</html>

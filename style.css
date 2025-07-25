@@ -1,0 +1,129 @@
+body {
+	height: 100vh;
+	height: 100%;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border: 2px solid #000;
+	color: #fff;
+	background-color: #000;
+	height: 80px;
+	padding: 0 20px;
+	font-family: sans-serif;
+}
+.header-title,
+.header-author {
+	font-size: 20px;
+}
+
+.game {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 20px;
+	height: 100%;
+	margin-top: 40px;
+}
+.result {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 50px;
+}
+.result-choice {
+	min-width: 180px;
+	max-width: 200px;
+	min-height: 180px;
+	max-height: 200px;
+	background-color: #fff;
+	border: 4px solid #000;
+	border-radius: 32px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: background-color 0.2s ease-in;
+}
+.result-choice__title {
+	font-size: 16px;
+	font-weight: 600;
+	font-family: sans-serif;
+	transition: font-size 0.2s ease-in;
+}
+.vs-title {
+	font-size: 48px;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+.game-result {
+	text-align: center;
+	font-family: sans-serif;
+	padding: 10px;
+}
+
+.buttons-to-play {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+
+	min-width: 100%;
+	width: 100%;
+	padding-top: 20px;
+}
+.buttons-to-play__choice {
+	display: flex;
+	gap: 10px;
+}
+.buttons-to-play__choice__button,
+.confirm-button,
+.retry-button {
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 25px;
+	border-radius: 16px;
+	transition: 0.2s ease-in all;
+	width: 100%;
+}
+.buttons-to-play__choice__button {
+	min-width: 90px;
+	max-width: 100px;
+	text-align: center;
+	padding: 10px 50px;
+	background-color: #000;
+	color: #fff;
+}
+.buttons-to-play__choice__button:hover,
+.confirm-button:hover,
+.retry-button:hover {
+	background-color: #fff;
+	color: #000;
+	border: 2px solid #000;
+}
+.buttons-to-play__choice__button:disabled {
+	background-color: #656565;
+	color: #ffffff;
+	cursor: default;
+	border: none;
+}
+.confirm-button {
+	min-width: 120px;
+	max-width: 180px;
+	background-color: #b7ffa7;
+}
+.retry-button {
+	display: none;
+	min-width: 120px;
+	max-width: 180px;
+	background-color: #ffa7a7;
+}
+.retry-button:hover {
+	background-color: #8c3232;
+	color: #fff;
+	border: 2px solid #000;
+}
